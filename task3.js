@@ -15,7 +15,9 @@ button.onclick = function changeTextStyle(){  //WTF
     let localDate = date.toLocaleString();
     //create child <p> element
     let postTime = document.createElement('p');
+    postTime.className = "post-time";
     let postContent = document.createElement('p');
+    postContent.className = "post-content"
     //attach child to parent div element
     var parent = document.getElementById('posts');
     parent.appendChild(postTime);
