@@ -14,7 +14,7 @@ let postButton = document.getElementById("postButton");
 postButton.onclick = function createPost(){
 
     //attach child (or children if numeric input says more than 1) to parent div element
-    let numberOfPosts = document.getElementById("gamer").value;
+    let numberOfPosts = document.getElementById("numOfPosts").value;
     for(let i = 0; i < numberOfPosts; i++){
 
         let parent = document.getElementById('posts');
