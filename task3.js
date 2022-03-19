@@ -29,6 +29,9 @@ postButton.onclick = function createPost(){
         let postContent = document.createElement('p');
         postContent.className = "post-content";
 
+        //determine whether text is bold or italic 
+        //if 
+
         //set post time fontweight and color
         postTime.style.color = "grey";
         postTime.style.fontWeight = "bold";
@@ -62,4 +65,11 @@ menuButton.onclick = function hideMainDiv(){
 backButton.onclick = function revealMainDiv(){
     mainDiv.style.display = "inline";
     menuDiv.style.display = "none";
+}
+
+
+let currBckGrndColor = document.getElementsByTagName("body")[0];
+currBckGrndColor.onchange = function changebckGrndColor() {
+    let newBckGrndColor = document.getElementById("backgroundInput").value;
+    currBckGrndColor.style.backgroundColor = newBckGrndColor;
 }
