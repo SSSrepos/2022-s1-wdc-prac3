@@ -68,8 +68,8 @@ backButton.onclick = function revealMainDiv(){
 }
 
 
-let currBckGrndColor = document.getElementById("test");
-currBckGrndColor.onchange = function changebckGrndColor() {
+
+var changeBodyBackgroundColor = () => {
     let newBckGrndColor = document.getElementById("backgroundInput").value;
-    currBckGrndColor.style.backgroundColor = newBckGrndColor;
+    document.body.style.backgroundColor = newBckGrndColor;
 }
